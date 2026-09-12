@@ -1,20 +1,27 @@
-# 编译产物
+# --- Build Artifacts ---
 *.o
 *.a
 *.so
-*.elf
 *.bin
-*.hex
+*.elf
 *.dis
 *.map
+*.d
+*.hex
 *.sym
 
-# 编辑器 / 系统
+# --- Tool Specific ---
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
 *.swp
 *~
-.DS_Store
+compile_commands.json
+
+# --- Documentation (Optional) ---
+# 如果你想保留 docs/ 目录，不要加下面这行
+# docs/*.pdf
 
 # 注意：这里故意不忽略 *.s / *.S，
-# ARM 裸机工程里的汇编源文件（start.S、led.S 等）是源码，必须纳入版本管理。
+# ARM 裸机工程里的汇编源文件（start.S、demo_start.S 等）是源码，必须纳入版本管理。
